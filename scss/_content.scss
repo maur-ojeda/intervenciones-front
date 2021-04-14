@@ -1,0 +1,39 @@
+//_content.scss
+.content-mobile {
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.request-content {
+
+    title {
+        font-weight: 600;
+    }
+    .nav-tabs-mobile {
+        border: 1px solid rgb(221, 221, 221);
+        text-transform: uppercase;
+        font-size: 12px;
+        .nav-item {
+            .nav-link {
+                border: none;
+                color: $color-system-text-secondary;
+                &:hover {
+                    background-color: transparent!important;
+                    color: $color-system-text-primary;
+                }
+            }
+            &.active {
+                border-bottom: 1px solid $color-system-orange;
+                .nav-link {
+                    color: $color-system-text-primary;
+                }
+            }
+        }
+    }
+}
+
+.update-data{
+    padding: 0 15px;
+    .card{ margin: 0 0 30px;}
+    
+}

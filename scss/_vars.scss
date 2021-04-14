@@ -1,0 +1,37 @@
+$bg-header-color: #555150;
+$bg-header-color-light:#666666;
+$color-system-orange: #f35b3f;
+$color-system-text-primary: #666666!important;
+$color-system-text-secondary: #BABABA!important;
+$border-radius-btn:4px!important;
+$font-stack: "Open Sans",sans-serif;
+//$color-btn: #f35b3f;
+$box-shadow-open-menu: 3px 3px 3px rgba(51, 51, 51, 0.2);
+
+
+//stytem colors :
+$bg-color: #eee;
+$custom-colors: #f35b3f;
+
+//no in use
+//mixin
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+.box {
+    @include transform(rotate(30deg));
+}
+
+// extend
+%message-shared {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+
+.message {
+    @extend %message-shared;
+}

@@ -1,0 +1,76 @@
+//global.scss
+body{background-color: $bg-color;}
+
+.btn-customized {
+       // margin-left: 5px;
+       // margin-right: 5px;
+       // padding: .75rem 1.5rem;
+        background: $custom-colors;
+        border: 0;
+     //   border-radius: $border-radius-btn;
+     //   font-size: 16px;
+     //   font-weight: 300;
+        color: #fff;
+     //   box-shadow: none;
+        &:hover,
+        &:active,
+        &:focus,
+        &:active:focus,
+        &.active:focus,
+        &.btn.btn-primary:not(:disabled):not(.disabled):active,
+        &.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
+            outline: 0;
+            background: lighten($custom-colors, 10%);
+            border: 0;
+            color: #fff;
+            box-shadow: none;
+        }
+    }
+    a.btn-customized-3 {
+        display: inline-block;
+        //width: 100%;
+        margin: 0;
+        padding: .75rem 1.5rem;
+        //background: $color-btn;
+        border: 0;
+        border-radius: 8px!important;
+        font-size: 16px;
+        font-weight: 300;
+        color: #fff;
+        box-shadow: none;
+    }
+    
+    a.btn-customized-3:hover,
+    a.btn-customized-3:active,
+    a.btn-customized-3:focus,
+    a.btn-customized-3:active:focus,
+    a.btn-customized-3.active:focus,
+    a.btn-customized-3.btn.btn-primary:not(:disabled):not(.disabled):active,
+    a.btn-customized-3.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
+        outline: 0;
+        background: #555;
+        border: 0;
+        color: #fff;
+        box-shadow: none;
+    }
+    
+    a.btn-customized-3 i {
+        margin-right: 5px;
+    }
+    
+   // p{font-size: 80%;}
+   // small{font-size:70%!important;}
+
+   .swal-button--confirm {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color:$custom-colors;
+    font-size: 12px;
+    border: 0;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+   
+  }
+  .swal-button:not([disabled]):hover{  background-color:$custom-colors;}
+
+
+  .select2-container--default .select2-results__option--highlighted[aria-selected]{ background-color:$custom-colors!important;}
