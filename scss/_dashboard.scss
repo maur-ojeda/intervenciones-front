@@ -1,18 +1,22 @@
 //.dashboard
 
-.card-mobile-intervetions{ 
- display: none;
-    .request-number{
-        border-right:1px solid $color-system-text-secondary;
-        .card-title{
-            small{font-size: 16px}
-            color:$color-system-text-primary;
+
+
+
+
+.im-dashboard{
+ 
+
+        .request-number{
+            border-right:1px solid $color-system-text-secondary;
+            .card-title{
+                small{font-size: 16px}
+                color:$color-system-text-primary;
+            }
+            i {color:red; font-size: 24px;}
         }
-        i {color:red; font-size: 24px;}
+        .request-data{
+            .card-title{}
+        }
     }
-    .request-data{
-        .card-title{}
-    }
-
-
-}
+    

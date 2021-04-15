@@ -1,0 +1,26 @@
+//Acordion
+.im-accordion .card-header
+ button:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+
+.im-accordion .card-header
+ button.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+}
+
+.im-accordion{
+
+
+    .card-body{
+        //titulo
+        h5{font-size: 16px; font-weight: 600;}
+        //contenido
+        p{ font-size: 14px; color:$color-system-text-primary; margin-bottom:7px;
+        strong{font-size: 12px; font-weight: 600;}
+        }
+    }
+}

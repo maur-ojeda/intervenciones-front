@@ -1,11 +1,18 @@
-<div class="dashboard">
-  <div class="card card-mobile-intervetions">
+<div class="im-dashboard">
+  <pre>im-dashboard 
+    todo: 
+    datatables
+  cambio por el select
+  </pre>
+</div>
+
+<div class="im-dashboard p-2">
+  <div class="card">
     <div class="card-body">
       <div class="card-subtitle mb-2 text-muted">
+      <?php include './partials/molecules/select.php' ?>
 
-<?php include './partials/molecules/select.php' ?>
 
-        <pre>todo usar datatables</pre>
 
        <!-- card item --> 
         <div class="card border-danger">
@@ -33,6 +40,3 @@
       </div>
     </div>
   </div>
-
-
-

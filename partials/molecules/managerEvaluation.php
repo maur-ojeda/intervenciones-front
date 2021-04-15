@@ -1,0 +1,17 @@
+<div class="card-header" id="heading-3">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+                                        Evaluación gestor de inmuebles </button>
+                                </h5>
+                            </div>
+                            <div id="collapse-3" class="collapse" aria-labelledby="heading-3" data-parent="#accordion">
+                                <div class="card-body">
+
+                                    Solicitud aprobada
+                                    Gestor:
+                                    Fecha de aprobación:
+                                    Comentarios:
+
+
+                                </div>
+                            </div>

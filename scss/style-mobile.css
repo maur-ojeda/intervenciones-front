@@ -314,25 +314,25 @@ a[aria-expanded="true"] {
   font-size: 18px !important;
 }
 
-.card-mobile-intervetions {
-  display: none;
-}
-
-.card-mobile-intervetions .request-number {
+.im-dashboard .request-number {
   border-right: 1px solid #BABABA !important;
 }
 
-.card-mobile-intervetions .request-number .card-title {
+.im-dashboard .request-number .card-title {
   color: #666666 !important;
 }
 
-.card-mobile-intervetions .request-number .card-title small {
+.im-dashboard .request-number .card-title small {
   font-size: 16px;
 }
 
-.card-mobile-intervetions .request-number i {
+.im-dashboard .request-number i {
   color: red;
   font-size: 24px;
+}
+
+.im-request .card-header small {
+  display: block;
 }
 
 .qty .count {
@@ -404,4 +404,31 @@ input::-webkit-inner-spin-button {
 
 input:disabled {
   background-color: white;
+}
+
+.im-accordion .card-header button:after {
+  font-family: 'FontAwesome';
+  content: "\f068";
+  float: right;
+}
+
+.im-accordion .card-header button.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "\f067";
+}
+
+.im-accordion .card-body h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.im-accordion .card-body p {
+  font-size: 14px;
+  color: #666666 !important;
+  margin-bottom: 7px;
+}
+
+.im-accordion .card-body p strong {
+  font-size: 12px;
+  font-weight: 600;
 }
