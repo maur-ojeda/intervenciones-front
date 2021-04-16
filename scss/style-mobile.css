@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .box {
   -webkit-transform: rotate(30deg);
   -ms-transform: rotate(30deg);
@@ -314,6 +315,10 @@ a[aria-expanded="true"] {
   font-size: 18px !important;
 }
 
+.im-dashboard h3 {
+  display: none;
+}
+
 .im-dashboard .request-number {
   border-right: 1px solid #BABABA !important;
 }
@@ -329,6 +334,217 @@ a[aria-expanded="true"] {
 .im-dashboard .request-number i {
   color: red;
   font-size: 24px;
+}
+
+.im-dashboard .dataTables_wrapper .dataTables_length {
+  display: none;
+}
+
+.im-dashboard .dataTables_wrapper .dataTables_filter {
+  text-align: left;
+  padding-left: 7px;
+}
+
+.im-dashboard .dataTables_wrapper .dataTables_filter label {
+  width: 100%;
+  padding-left: 7px;
+}
+
+.im-dashboard .dataTables_wrapper .dataTables_filter label input {
+  width: 100%;
+  border: solid 1px #ccc;
+  margin-left: 0;
+  border-radius: 4px !important;
+}
+
+.im-dashboard .dataTables_wrapper .dataTables_info {
+  font-size: 11px;
+}
+
+.im-dashboard .dataTables_wrapper .dataTables_paginate {
+  font-size: 11px;
+}
+
+.im-dashboard .dataTables_wrapper .dataTables_paginate a {
+  display: inline-block;
+  color: #f35b3f;
+  margin: 0 5px 0;
+}
+
+.im-dashboard .dataTable {
+  border: none !important;
+  font-size: 12px;
+}
+
+.im-dashboard .dataTable .fa {
+  font-size: 7.5rem;
+}
+
+.im-dashboard .dataTable tbody tr {
+  float: left;
+  width: 100%;
+  border: 1px solid red !important;
+  border-radius: 4px !important;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 16px;
+}
+
+.im-dashboard .dataTable tbody td {
+  display: block;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+}
+
+.im-dashboard .dataTable tbody td:first-child {
+  padding-top: 15px;
+  grid-column: 1;
+  grid-row: 1;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  align-self: stretch;
+  color: #666666 !important;
+  font-size: 18px;
+  text-align: center;
+  border-right: 1px solid lighing(#666666 !important, 80%);
+}
+
+.im-dashboard .dataTable tbody td:first-child::before {
+  display: block;
+  font-size: 11px !important;
+  width: 100%;
+  font-weight: bold;
+  content: "Nro de solicitud: ";
+}
+
+.im-dashboard .dataTable tbody td:first-child::after {
+  color: red;
+  width: 100%;
+  display: block;
+  font-family: 'FontAwesome';
+  content: "\f06a";
+}
+
+.im-dashboard .dataTable tbody td:nth-child(2) {
+  padding-top: 25px;
+  border: none;
+  grid-column: 1;
+  grid-row: 1;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  align-self: center;
+  color: #666666 !important;
+  font-size: 11px;
+  text-align: center;
+}
+
+.im-dashboard .dataTable tbody td:nth-child(3) {
+  display: none;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.im-dashboard .dataTable tbody td:nth-child(3)::before {
+  font-weight: bold;
+  content: "Clasificación: ";
+}
+
+.im-dashboard .dataTable tbody td:nth-child(4) {
+  display: none;
+  grid-column: 2;
+}
+
+.im-dashboard .dataTable tbody td:nth-child(4)::before {
+  font-weight: bold;
+  content: "Solicitante: ";
+}
+
+.im-dashboard .dataTable tbody td:nth-child(5) {
+  color: #666666 !important;
+  font-size: 14px;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.im-dashboard .dataTable tbody td:nth-child(5)::before {
+  color: #666666 !important;
+  font-size: 11px;
+  font-weight: bold;
+  content: "Sucursal: ";
+  display: block;
+  padding-bottom: 5px;
+}
+
+.im-dashboard .dataTable tbody td:nth-child(6) {
+  display: none;
+}
+
+.im-dashboard .dataTable tbody td:nth-child(7) {
+  display: none;
+}
+
+.im-dashboard .dataTable tbody td:nth-child(8) {
+  display: none;
+}
+
+.im-dashboard .dataTable tbody td:nth-child(9) {
+  display: none;
+}
+
+.im-dashboard .dataTable tbody td:nth-child(10) {
+  grid-column: 2;
+  display: block;
+  padding-bottom: 5px;
+  color: #666666 !important;
+  font-size: 14px;
+}
+
+.im-dashboard .dataTable tbody td:nth-child(10)::before {
+  color: #666666 !important;
+  font-size: 11px;
+  display: block;
+  padding-bottom: 5px;
+  font-weight: bold;
+  content: "Estado: ";
+}
+
+.im-dashboard .dataTable tbody td:nth-child(11) {
+  grid-column: 2;
+}
+
+.im-dashboard .dataTable tbody td:nth-child(11) .btn.btn-warning {
+  border-color: #f35b3f !important;
+  background-color: #f35b3f !important;
+  color: #fff;
+}
+
+.im-dashboard .dataTable tbody label {
+  display: none;
+  display: inline;
+  position: relative;
+  font-size: 85%;
+  top: -0.5rem;
+  float: left;
+  color: gray;
+  min-width: 4rem;
+  margin-left: 0;
+  margin-right: 1rem;
+  text-align: left;
+}
+
+.im-dashboard tr.selected label {
+  color: #404040;
+}
+
+.im-dashboard .table .fa {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.im-dashboard .table.table-striped.table-bordered.dataTable.no-footer thead {
+  display: none;
 }
 
 .im-request .card-header small {

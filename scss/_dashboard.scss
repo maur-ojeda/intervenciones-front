@@ -1,22 +1,210 @@
 //.dashboard
-
-
-
-
-
-.im-dashboard{
- 
-
-        .request-number{
-            border-right:1px solid $color-system-text-secondary;
-            .card-title{
-                small{font-size: 16px}
-                color:$color-system-text-primary;
+.im-dashboard {
+    h3 {
+        display: none;
+    }
+    .request-number {
+        border-right: 1px solid $color-system-text-secondary;
+        .card-title {
+            small {
+                font-size: 16px
             }
-            i {color:red; font-size: 24px;}
+            color:$color-system-text-primary;
         }
-        .request-data{
-            .card-title{}
+        i {
+            color: red;
+            font-size: 24px;
         }
     }
-    
+    .request-data {
+        .card-title {}
+    }
+    .dataTables_wrapper {
+        .dataTables_length {
+            display: none
+        }
+        .dataTables_filter {
+            text-align: left;
+            padding-left: 7px;
+            label {
+                width: 100%;
+                padding-left: 7px;
+                input {
+                    width: 100%;
+                    border: solid 1px #ccc;
+                    margin-left: 0;
+                    border-radius: $border-radius-btn;
+                }
+            }
+        }
+        .dataTables_info {
+            font-size: 11px;
+        }
+        .dataTables_paginate {
+            font-size: 11px;
+            a {
+                display: inline-block;
+                color: $color-system-orange;
+                margin: 0 5px 0;
+            }
+        }
+    }
+    .dataTable {
+        border: none !important;
+        font-size: 12px;
+        .fa {
+            font-size: 7.5rem
+        }
+        tbody {
+            tr {
+                float: left;
+                width: 100%;
+                //margin: .5rem;
+                border: 1px solid red!important;
+                border-radius: 4px!important;
+                background-color: #fff;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                //grid-gap: 0;
+                //grid-auto-rows: auto;
+                margin-bottom: 16px;
+            }
+            td {
+                display: block;
+                border-bottom: none;
+                border-top: none;
+                border-left: none;
+                &:first-child {
+                    padding-top: 15px;
+                    grid-column: 1;
+                    grid-row: 1;
+                    grid-row-start: 1;
+                    grid-row-end: 5;
+                    align-self: stretch;
+                    color: $color-system-text-primary;
+                    font-size: 18px;
+                    text-align: center;
+                    border-right: 1px solid lighing($color-system-text-primary, 80%);
+                    &::before {
+                        display: block;
+                        font-size: 11px!important;
+                        width: 100%;
+                        font-weight: bold;
+                        content: "Nro de solicitud: "
+                    }
+                    &::after {
+                        color: red;
+                        width: 100%;
+                        display: block;
+                        font-family: 'FontAwesome';
+                        content: "\f06a";
+                    }
+                }
+                &:nth-child(2) {
+                    padding-top: 25px;
+                    border: none;
+                    grid-column: 1;
+                    grid-row: 1;
+                    grid-row-start: 1;
+                    grid-row-end: 5;
+                    align-self: center;
+                    color: $color-system-text-primary;
+                    font-size: 11px;
+                    text-align: center;
+                    //display: none
+                }
+                &:nth-child(3) {
+                    display: none;
+                    grid-column: 2;
+                    grid-row: 2;
+                    &::before {
+                        font-weight: bold;
+                        content: "Clasificación: "
+                    }
+                }
+                &:nth-child(4) {
+                    display: none;
+                    grid-column: 2;
+                    &::before {
+                        font-weight: bold;
+                        content: "Solicitante: "
+                    }
+                }
+                &:nth-child(5) {
+                    color: $color-system-text-primary;
+                    font-size: 14px;
+                    &::before {
+                        color: $color-system-text-primary;
+                        font-size: 11px;
+                        font-weight: bold;
+                        content: "Sucursal: ";
+                        display: block;
+                        padding-bottom: 5px;
+                    }
+                    grid-column: 2;
+                    grid-row: 1;
+                }
+                &:nth-child(6) {
+                    display: none
+                }
+                &:nth-child(7) {
+                    display: none
+                }
+                &:nth-child(8) {
+                    display: none
+                }
+                &:nth-child(9) {
+                    display: none;
+                }
+                &:nth-child(10) {
+                    grid-column: 2;
+                    display: block;
+                    padding-bottom: 5px;
+                    color: $color-system-text-primary;
+                    font-size: 14px;
+                    &::before {
+                        color: $color-system-text-primary;
+                        font-size: 11px;
+                        display: block;
+                        padding-bottom: 5px;
+                        font-weight: bold;
+                        content: "Estado: "
+                    }
+                }
+                &:nth-child(11) {
+                    grid-column: 2;
+                    .btn {
+                        &.btn-warning {
+                            border-color: $color-system-orange!important;
+                            background-color: $color-system-orange!important;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            label {
+                display: none;
+                display: inline;
+                position: relative;
+                font-size: 85%;
+                top: -0.5rem;
+                float: left;
+                color: gray;
+                min-width: 4rem;
+                margin-left: 0;
+                margin-right: 1rem;
+                text-align: left
+            }
+        }
+    }
+    tr.selected label {
+        color: #404040
+    }
+    .table .fa {
+        font-size: 2.5rem;
+        text-align: center
+    }
+    .table.table-striped.table-bordered.dataTable.no-footer thead {
+        display: none
+    }
+}

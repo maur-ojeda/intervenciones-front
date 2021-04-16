@@ -7,6 +7,9 @@
     <script>
         $(document).ready(function() {
 
+            tableSelector(0);
+
+
             //select 2
             $('.sucursales').select2();
 
@@ -36,6 +39,22 @@
 
             });
 
+
+
+
+
+            $("#aproverModalAprove").on('hidden.bs.modal', function() {
+                enviaDatos();
+            });
+            $("#aproverModalReject").on('hidden.bs.modal', function() {
+                enviaDatos();
+            });
+            $("#aproverModalInfo").on('hidden.bs.modal', function() {
+                enviaDatos();
+            });
+
+
+
             //alert
 
             function actualizaDatos() {
@@ -49,6 +68,45 @@
                 });
             }
 
+            function enviaDatos() {
+
+swal({
+    title: "Operación exitosa!",
+    text: "se han realizado la operación",
+    icon: "success",
+    button: "Aceptar",
+
+});
+}
+
+
+            /** tableSelector
+ * panel0 = solicitudes por revisar
+ * panel1 = solicitudes en proceso
+ * panel2 = solicitudes historicas
+ *  */
+function tableSelector(initialTable) {
+   
+
+    $(".dataTables_wrapper")
+        .each(function(index) {
+            $(this).addClass("panel" + index);
+            if (index != initialTable) {
+                $(this).css({ display: "none" });
+            } else {
+                $(this).css({ display: "block" });
+            }
+        });
+
+    $("#selectorPanel").change(function() {
+        panelToShow = $(this).val();
+        $(".dataTables_wrapper")
+            .each(function(index) {
+                $(this).css({ display: "none" });
+            });
+        $("." + panelToShow).toggle();
+    });
+}
 
 
 

@@ -29,7 +29,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-customized" data-dismiss="modal">>Enviar</button>
+        <button type="button" class="btn btn-customized">Enviar</button>
       </div>
     </div>
   </div>

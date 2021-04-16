@@ -4,15 +4,13 @@ $color-system-orange: #f35b3f;
 $color-system-text-primary: #666666!important;
 $color-system-text-secondary: #BABABA!important;
 $border-radius-btn:4px!important;
-$font-stack: "Open Sans",sans-serif;
+$font-stack: "Open Sans",
+sans-serif;
 //$color-btn: #f35b3f;
 $box-shadow-open-menu: 3px 3px 3px rgba(51, 51, 51, 0.2);
-
-
 //stytem colors :
 $bg-color: #eee;
 $custom-colors: #f35b3f;
-
 //no in use
 //mixin
 @mixin transform($property) {
