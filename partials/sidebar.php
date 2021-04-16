@@ -21,7 +21,7 @@
                     </a>
                         <ul class="collapse list-unstyled" id="drop1">
                             <li>
-                                <a class="scroll-link" href="./evaluador-dashboard.php">Estados de Solicitudes</a>
+                                <a class="scroll-link" href="./evaluador-dashboard.html">Estados de Solicitudes</a>
                             </li>
                             <li>
                                 <a href="#drop2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" role="button" aria-controls="otherSections">
