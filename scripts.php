@@ -4,14 +4,16 @@
     <script src="./jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
     <script>
         $(document).ready(function() {
 
             tableSelector(0);
 
-
             //select 2
             $('.sucursales').select2();
+            $('#cotizacion_proyecto_partidas_items_4_partida').select2();
+            $('.js-example-basic-single').select2();
 
             // menu functions
             $('.dismiss, .overlay-mobile').on('click', function() {
@@ -39,10 +41,6 @@
 
             });
 
-
-
-
-
             $("#aproverModalAprove").on('hidden.bs.modal', function() {
                 enviaDatos();
             });
@@ -52,6 +50,13 @@
             $("#aproverModalInfo").on('hidden.bs.modal', function() {
                 enviaDatos();
             });
+
+
+
+
+
+
+
 
 
 
@@ -109,6 +114,63 @@ function tableSelector(initialTable) {
 }
 
 
+//validacion formularios
+/*
+incluir en cada campo a validar 
 
-        });
+ data-rule-required="true" 
+ aria-invalid="true" 
+ data-msg-required="mensaje de error"
+
+*/
+
+
+$("#gestor_inmuebles_aprobacion").validate({
+    errorElement: "p",
+    errorLabelContainer: $("#gestor_inmuebles_aprobacion div.error-form-modal")
+});
+
+
+$("#gestor_inmuebles_rechazo").validate({
+    errorElement: "p",
+    errorLabelContainer: $("#gestor_inmuebles_rechazo div.error-form-modal")
+});
+
+
+$("#mas_informacion").validate({
+    errorElement: "p",
+    errorLabelContainer: $("#mas_informacion div.error-form-modal")
+});
+
+
+
+
+
+
+$('#cotizacion_proyecto').find(".glyphicon.glyphicon-info-sign").addClass('fa fa-info-circle')
+$('#cotizacion_proyecto').find(".glyphicon.glyphicon-plus").addClass('fa fa-plus')
+$('#cotizacion_proyecto').find(".glyphicon.glyphicon-minus").addClass('fa fa-minus')
+
+
+
+$('#cotizacion-partidas-items').find('.col-md-12').addClass('table-responsive-sm')
+$('#cotizacion-partidas-items').find('.table').addClass('table-inverse table-responsive')
+
+
+
+
+
+
+
+
+
+
+
+});
+
+
+
+
+	
+
     </script>

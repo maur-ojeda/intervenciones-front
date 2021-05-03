@@ -10,7 +10,7 @@
   <div class="card">
     <div class="card-body">
       <div class="card-subtitle mb-2 text-muted">
-      <?php include './partials/molecules/select.php' ?>
+      <?php include './partials/componenets/select.php' ?>
 
 
 

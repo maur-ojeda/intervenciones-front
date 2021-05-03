@@ -1,26 +1,39 @@
 //Acordion
-.im-accordion .card-header
- button:after {
-    font-family: 'FontAwesome';  
-    content: "\f068";
-    float: right; 
-}
-
-.im-accordion .card-header
- button.collapsed:after {
-    /* symbol for "collapsed" panels */
-    content: "\f067"; 
-}
-
 .im-accordion{
-
-
+    .card-header{        
+        button{
+            position: relative;
+            &:after {
+                width: 5%;
+                font-family: 'FontAwesome';  
+                content: "\f068";
+                position: absolute;
+                right:5px;
+                top:25%;
+                z-index: 100;
+            }
+            &.collapsed:after {
+                content: "\f067"; 
+            }
+            span{
+                display: block;
+                font-size: 12px!important;
+                
+            }
+        }
+    } 
+    
     .card-body{
         //titulo
         h5{font-size: 16px; font-weight: 600;}
         //contenido
-        p{ font-size: 14px; color:$color-system-text-primary; margin-bottom:7px;
-        strong{font-size: 12px; font-weight: 600;}
+        p{ font-size: 14px; color: #000; margin-bottom:7px;
+        strong{font-size: 12px; font-weight: 600; display: block; margin-bottom:2px; color: $color-system-text-primary;}
         }
+        table{
+            th{font-size: 11px; font-weight: 600;}
+            font-size: 11px; color:$color-system-text-primary;}
     }
 }
+
+

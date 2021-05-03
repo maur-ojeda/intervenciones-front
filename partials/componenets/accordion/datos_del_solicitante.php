@@ -1,11 +1,13 @@
 <div class="card-header pl-1 pr-1" id="heading-1">
     <h4 class="mb-0">
         <button class="text-left btn btn-default btn-block" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+        <span class="pr-3">
             Datos solicitante
+        </span>
         </button>
     </h>
 </div>
-<div id="collapse-1" class="collapse show" aria-labelledby="heading-1" data-parent="#accordion">
+<div id="collapse-1" class="collapse fade" aria-labelledby="heading-1" data-parent="#accordion">
     <div class="card-body">
     <h5 class="mb-3">Datos de Contacto</h5>
         <p><strong>Sucursal: </strong>[Putre]</p>

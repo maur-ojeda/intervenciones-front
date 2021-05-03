@@ -4,7 +4,140 @@
     .card-header{
         small{display: block;}
     }
+
+    .alert-danger{ 
+        background-color: red;
+        color: #fff;
+    }
+ 
+    
+    .custom-control{ margin-bottom: 12px;}
+   
+.error-form-modal{
+    padding: 15px;
+    h6 {color: $color-system-text-primary;}
+    p {margin-bottom:0.5rem}
 }
 
+    div.error-form-modal{
+        color:tomato;
+    	display: none;
+        font-size: 11px;
+        font-weight: bold;
+    }
+    .form-control.error{
+        border: 2px solid tomato;
+    }
+
+
+    .form-check-input.error{
+    width: 13px;
+    height: 13px;
+        position: relative;
+        &::after{
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 13px;
+            height:13px;
+            border: 2px solid tomato;
+            border-radius: 50%;
+        }   
+    }
+    
+
+    .form-check-input{ 
+        width: 5%;
+    
+     
+    }
+}
+
+
+#im-providder-request{
+/*
+    th {  
+      &:first-child {
+            background: red;
+            width: 400px!important;
+    
+        }
+    }
+*/
+.table{
+    th {padding: 2px!important;
+    white-space: normal !important;
+    }
+    td {
+        padding:5px 2px!important;
+        &[style] { width: auto !important;}
+        &:first-child {
+            select{
+                width: 150px!important;
+            }
+        }     
+        &:nth-child(2)  {
+            input{
+                width: 50px!important;
+                text-align: center;
+                }
+        }
+        &:nth-child(3)  {        
+            input{
+                width: 60px!important;
+                
+                }
+        }
+        &:nth-child(4)  {
+            input{
+                width: 60px!important;
+                text-align: left!important;
+                }
+        }      
+        &:nth-child(5)  {
+            input{
+                width: 60px!important;
+                text-align: left!important;
+                }
+           } 
+        &:nth-child(6)  {background-color: cyan;} 
+            
+    
+    }
+}
+
+    }
+
+    #cotizacion_proyecto{
+
+>.embedded-form[style] {
+
+    
+    background: #fff !important;
+ }
+
+
+ .embedded-form {
+     h3{
+        font-size: 16px !important;
+        //color:  !important;
+    }
+    
+
+    }
+
+
+
+ .form-control{
+     font: 11px sans-serif;
+ }
+
+
+
+    }
+
+    
+    
 
 

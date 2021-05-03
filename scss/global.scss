@@ -1,6 +1,11 @@
 //global.scss
 body{background-color: $bg-color;}
 
+a{ color: $color-system-orange;
+&:hover{ color: $color-system-orange;}
+}
+
+
 .btn-customized {
        // margin-left: 5px;
        // margin-right: 5px;
@@ -74,3 +79,9 @@ body{background-color: $bg-color;}
 
 
   .select2-container--default .select2-results__option--highlighted[aria-selected]{ background-color:$custom-colors!important;}
+
+  .table{
+    th{font-size: 11px; font-weight: 600;}
+    font-size: 11px; color:$color-system-text-primary;
+white-space: nowrap;
+}

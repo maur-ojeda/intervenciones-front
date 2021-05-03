@@ -17,8 +17,8 @@
             <div id="accordion" class="mt-3 im-accordion">
                 <div class="card">
                     <!--tab-->
-                    <?php include './partials/molecules/applicantInformation.php' ?>
-                    <?php include './partials/molecules/requestData.php' ?>
+                    <?php include './partials/componenets/applicantInformation.php' ?>
+                    <?php include './partials/componenets/requestData.php' ?>
                 </div>
             </div>
             <hr>

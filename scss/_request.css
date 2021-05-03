@@ -1,3 +1,44 @@
 .im-request .card-header small {
   display: block;
 }
+
+.im-request .alert-danger {
+  background-color: red;
+  color: #fff;
+}
+
+.im-request .custom-control {
+  margin-bottom: 12px;
+}
+
+.im-request div.error-form-modal {
+  color: tomato;
+  display: none;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.im-request .form-control.error {
+  border: 2px solid tomato;
+}
+
+.im-request .form-check-input.error {
+  width: 13px;
+  height: 13px;
+  position: relative;
+}
+
+.im-request .form-check-input.error::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 13px;
+  height: 13px;
+  border: 2px solid tomato;
+  border-radius: 50%;
+}
+
+.im-request .form-check-input {
+  width: 5%;
+}
