@@ -1,5 +1,5 @@
- html/
- scss/
- index.innerHTML
- mobile.zip
- TODO.md
+
+*.DS_Store
+scss/
+index.innerHTML
+TODO.md
